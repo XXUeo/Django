@@ -8,5 +8,5 @@ urlpatterns = [
 
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^music/', include('music.urls')),
+    url(r'^music/', include('music.urls', namespace="music")),
 ]
